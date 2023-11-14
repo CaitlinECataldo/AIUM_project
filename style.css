@@ -4,8 +4,21 @@
 }
 
 #social-media-nav {
-    display: block;
+    display: inline-flex;
     color: white;
+    height: 25px;
+    padding-top: 50px;
+    margin-left: 60%;
+    margin-top: 1000px;
+}
+
+.logo-header, img {
+    margin: auto;
+}
+
+img, #social-media-nav {
+    margin-top: 18px;
+    margin-right: 20px;
 }
 
 .navigation {
