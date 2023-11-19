@@ -1,0 +1,31 @@
+.header {
+    background-color: black;
+    width: 200px;
+}
+
+.navigation {
+    background-color:#ececec;
+    width: 200px;
+}
+
+.product {
+    background-image: url("image-assets/topsection-background.png");
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+}
+
+.about-product {
+    background-color: #898989;
+    width: 200px;
+}
+
+.reviews {
+    background-color: #00314f;
+    width: 200px;
+}
+
+.footer {
+    background-color: black;
+    width: 200px;
+}
