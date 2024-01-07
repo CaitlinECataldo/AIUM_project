@@ -217,6 +217,9 @@ footer .nav-links li:not(:last-child) ::after {
 .category-name ::after {
     text-decoration: underline;
     content: 'Product Category';
+}
+
+.product-type p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -224,13 +227,11 @@ footer .nav-links li:not(:last-child) ::after {
     content: '>';
     text-decoration: none;
     margin: 0px 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .product-type ::after {
     font-weight: 700;
     content: 'Product Type';
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .reviews {
