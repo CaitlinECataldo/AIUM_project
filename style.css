@@ -190,7 +190,7 @@ footer .nav-links li:not(:last-child) ::after {
     width: inherit;
     height: inherit;
     margin: auto 65px auto 80px;
-    background-image: url(/image-assets/tough-mojo-jacket-img1.png);
+    background-image: url(image-assets/tough-mojo-jacket-img1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 350px;
