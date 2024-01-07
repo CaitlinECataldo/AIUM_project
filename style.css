@@ -4,15 +4,46 @@ body {
     background-color: black;
 }
 
+h1, h2, h3, p {
+    font-family: 'Raleway';
+    color: rgba(255, 255, 255, 0.85);
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Raleway';
+    color: white;
+}
+
+.main-content{
+    min-width: max-content;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    height: 500px;
+}
+
 .margin-right {
     margin-right: 20px;
 }
 
 .parent-container {
-    width: 800px;
+    width: 1000px;
     display: flex;
     margin: auto;
     height: inherit;
+    padding: 0px 50px;
 }
 
 
@@ -44,10 +75,10 @@ body {
 }
 
 .search-box {
-    width: inherit;
+    width: 260px;
     height: 25px;
     background-color: white;
-    margin: auto auto 30px auto;
+    margin: auto 0px 30px auto;
 }
 
 .search-box-text ::after {
@@ -62,7 +93,7 @@ body {
     flex-direction: row;
     font-size: 10px;
     margin: auto 0px auto auto;
-    flex: 2;
+
 }
 
 .nav-links {
@@ -130,20 +161,76 @@ footer .nav-links li:not(:last-child) ::after {
     background-image: url("image-assets/topsection-background.png");
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 550px;
+}
+
+.product ul {
+    list-style: none;
+    font-family: 'Raleway';
+    color: rgba(255, 255, 255, 0.833);
+    font-size: 18px;
+    width: 100%;
+    padding: 0px;
+}
+
+.product li {
+    margin: 8px 0px;
 }
 
 .product-container {
-    width: 800px;
+    width: max-content;
     background-color: rgba(0, 0, 0, 0.50);
     height: inherit;
     display: flex;
     margin: auto auto auto auto;
 }
 
+.product-image {
+    flex: 1;
+    width: inherit;
+    height: inherit;
+    margin: auto 65px auto 80px;
+    background-image: url(/image-assets/tough-mojo-jacket-img1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 350px;
+}
+
+.product-description {
+    flex: 1;
+}
+
 .about-product {
     background-color: #898989;
     height: 200px;
+}
+
+.product-category {
+    display: flex;
+    margin: 10px 25px;
+    width: inherit;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.category-name ::after {
+    text-decoration: underline;
+    content: 'Product Category';
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-type ::before {
+    content: '>';
+    text-decoration: none;
+    margin: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-type ::after {
+    font-weight: 700;
+    content: 'Product Type';
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .reviews {
