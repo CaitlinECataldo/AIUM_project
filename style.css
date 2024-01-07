@@ -35,7 +35,6 @@ body {
     background-size: 50%;
     background-position: left center;
     width: 100%;
-    max-width: 500px;
     flex: 2;
 }
 
@@ -62,7 +61,7 @@ body {
     display: flex;
     flex-direction: row;
     font-size: 10px;
-    margin: auto;
+    margin: auto 0px auto auto;
     flex: 2;
 }
 
@@ -91,15 +90,16 @@ footer .nav-links li:not(:last-child) ::after {
     margin: auto;
     color: #00314f;
     font-size: 25px;
-    width: 800px
+    width: 800px;
+    padding: 0px;
 }
 
 .nav-background .nav-links li ::after {
-    margin-left: 40px;
+    margin: 0px 45px 0px 45px;
     }
 
     .nav-background .nav-links li {
-        margin: auto;
+        flex: 1;
         }
 
 
@@ -134,7 +134,7 @@ footer .nav-links li:not(:last-child) ::after {
 }
 
 .product-container {
-    width: 750px;
+    width: 800px;
     background-color: rgba(0, 0, 0, 0.50);
     height: inherit;
     display: flex;
