@@ -1,8 +1,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-body {
-    background-color: black;
-}
+
 
 .margin-right {
     margin-right: 20px;
@@ -11,6 +9,7 @@ body {
 
 .header-background {
     height: 150px;
+    background-color: black;
 }
 
 .grid-container {
@@ -52,43 +51,47 @@ body {
     color: white;
     display: flex;
     flex-direction: row;
-    padding-left: 14px;
     font-size: 10px;
     margin: auto;
 }
 
-.sub-nav ul, .grid-container ul {
+.nav-links {
+    margin-top: 2.5px;
+}
+
+.nav-links li:not(:last-child) ::after {
+    content: '|';
+    margin: 15px;
+
+}
+
+footer .nav-links li:not(:last-child) ::after {
+    margin: 5px;
+}
+
+.nav-links ul {
     list-style: none;
     display: flex;
-    margin-top: 5px;
+    margin: 5px;
     color: white;
 }
 
-
-.sub-nav li {
-    float: left;
-    padding: 0px 8px;
+.nav-background .nav-links ul {
+    margin: auto;
+    color: #00314f;
+    font-size: 25px;
 }
 
-.sub-nav-links li:not(:last-child) ::after {
-    content: '|';
-    padding-left: 18px;
-
-}
-
-.sub-nav-links li:not(:last-child) ::after {
-    content: '|';
-    margin: 5px;
-    padding: 0px;
-
-}
+.nav-background .nav-links li ::after {
+    margin: 0px 63px;
+    }
 
 .social-icons {
     background-image: url(image-assets/fb-icon.png), url(image-assets/twitter-icon.png);
     background-position: left center, right center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 8px 11px, 15px 10px;
-    width: 50px;
+    background-size: 6px 11px, 16px 10px;
+    width: 40px;
 
 }
 
@@ -99,6 +102,7 @@ body {
     height: 60px;
     font-family: 'Raleway', sans-serif;
     color: black;
+    display: flex;
 }
 
 
@@ -123,18 +127,19 @@ body {
 
 footer {
     background-color: black;
-    height: 20px;
+    height: 50px;
 }
 
 footer .grid-container {
     padding: 10px;
+    background-color: black;
 }
 
 footer .logo-main {
-    background-size: 70px;
+    background-size: 100px;
 }
 
-footer .sub-nav-links li {
+footer .nav-links li {
     padding: 0px;
 }
 
