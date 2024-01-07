@@ -3,6 +3,12 @@
 body {
     background-color: black;
 }
+
+.margin-right {
+    margin-right: 20px;
+}
+
+
 .header-background {
     height: 150px;
 }
@@ -10,7 +16,6 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
-
     height: inherit;
 }
 
@@ -28,7 +33,6 @@ body {
 .container {
     width: inherit;
     margin: auto;
-
 }
 
 .search-box {
@@ -130,16 +134,10 @@ footer .logo-main {
     background-size: 70px;
 }
 
-.margin-right {
-    margin-right: 20px;
-}
-
 footer .sub-nav-links li {
     padding: 0px;
 }
 
-.margin {
-    padding: 0px 100px;
-}
+
 
 
