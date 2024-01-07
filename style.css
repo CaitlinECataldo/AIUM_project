@@ -1,9 +1,18 @@
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-
+body {
+    background-color: black;
+}
 
 .margin-right {
     margin-right: 20px;
+}
+
+.parent-container {
+    width: 800px;
+    display: flex;
+    margin: auto;
+    height: inherit;
 }
 
 
@@ -13,8 +22,8 @@
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    width: inherit;
     height: inherit;
 }
 
@@ -24,21 +33,22 @@
     background-image: url(image-assets/axiom-logo-main.png);
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position: center center;
+    background-position: left center;
     width: 100%;
     max-width: 500px;
+    flex: 2;
 }
 
 .container {
-    width: inherit;
     margin: auto;
+    flex: 1;
 }
 
 .search-box {
-    width: 350px;
+    width: inherit;
     height: 25px;
     background-color: white;
-    margin-bottom: 30px;
+    margin: auto auto 30px auto;
 }
 
 .search-box-text ::after {
@@ -53,6 +63,7 @@
     flex-direction: row;
     font-size: 10px;
     margin: auto;
+    flex: 2;
 }
 
 .nav-links {
@@ -80,11 +91,18 @@ footer .nav-links li:not(:last-child) ::after {
     margin: auto;
     color: #00314f;
     font-size: 25px;
+    width: 800px
 }
 
 .nav-background .nav-links li ::after {
-    margin: 0px 63px;
+    margin-left: 40px;
     }
+
+    .nav-background .nav-links li {
+        margin: auto;
+        }
+
+
 
 .social-icons {
     background-image: url(image-assets/fb-icon.png), url(image-assets/twitter-icon.png);
@@ -115,6 +133,14 @@ footer .nav-links li:not(:last-child) ::after {
     height: 500px;
 }
 
+.product-container {
+    width: 750px;
+    background-color: rgba(0, 0, 0, 0.50);
+    height: inherit;
+    display: flex;
+    margin: auto auto auto auto;
+}
+
 .about-product {
     background-color: #898989;
     height: 200px;
@@ -137,6 +163,7 @@ footer .grid-container {
 
 footer .logo-main {
     background-size: 100px;
+    flex: 1;
 }
 
 footer .nav-links li {
