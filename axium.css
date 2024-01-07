@@ -13,17 +13,22 @@
 
 .logo-main {
     height: 100px;
-    padding-left: 250px;
+    margin: auto;
 }
 
 .container {
     width: max-content;
+    margin: auto;
 }
 
 .search-box {
     width: 350px;
     height: 25px;
     background-color: white;
+}
+
+.search-box-text ::after {
+    content: 'Search for gear';
 }
 
 .sub-nav {
