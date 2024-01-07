@@ -1,14 +1,17 @@
   @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
-.header-background {
+body {
     background-color: black;
-    height: 200px;
+}
+.header-background {
+    height: 150px;
 }
 
-.header {
+.grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    padding-top: 50px;
+
+    height: inherit;
 }
 
 .logo-main {
@@ -16,21 +19,23 @@
     margin: auto;
     background-image: url(image-assets/axiom-logo-main.png);
     background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: top center;
+    background-size: 50%;
+    background-position: center center;
     width: 100%;
     max-width: 500px;
 }
 
 .container {
-    width: max-content;
+    width: inherit;
     margin: auto;
+
 }
 
 .search-box {
     width: 350px;
     height: 25px;
     background-color: white;
+    margin-bottom: 30px;
 }
 
 .search-box-text ::after {
@@ -43,14 +48,16 @@
     color: white;
     display: flex;
     flex-direction: row;
-    margin: 30px 0px 30px 0px;
     padding-left: 14px;
+    font-size: 10px;
+    margin: auto;
 }
 
-.sub-nav ul {
+.sub-nav ul, .grid-container ul {
     list-style: none;
     display: flex;
     margin-top: 5px;
+    color: white;
 }
 
 
@@ -65,41 +72,39 @@
 
 }
 
+.sub-nav-links li:not(:last-child) ::after {
+    content: '|';
+    margin: 5px;
+    padding: 0px;
+
+}
+
 .social-icons {
     background-image: url(image-assets/fb-icon.png), url(image-assets/twitter-icon.png);
     background-position: left center, right center;
     background-repeat: no-repeat, no-repeat;
-    background-size: auto auto, auto auto;
+    background-size: 8px 11px, 15px 10px;
     width: 50px;
 
 }
 
-.sub-nav-links {
-    margin-left: 30px;
-    position: absolute;
-}
+
 
 .nav-background {
     background-color:#ececec;
-    height: 200px;
+    height: 60px;
     font-family: 'Raleway', sans-serif;
     color: black;
 }
 
-.navigation {
-    background-color:#ae2f2f;
-    height: 50px;
-    font-family: 'Raleway', sans-serif;
-    color: black;
-    margin-top: 125px;
-}
+
 
 
 .product {
     background-image: url("image-assets/topsection-background.png");
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 500px;
 }
 
 .about-product {
@@ -112,7 +117,29 @@
     height: 200px;
 }
 
-.footer {
+footer {
     background-color: black;
-    height: 50px;
+    height: 20px;
 }
+
+footer .grid-container {
+    padding: 10px;
+}
+
+footer .logo-main {
+    background-size: 70px;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+footer .sub-nav-links li {
+    padding: 0px;
+}
+
+.margin {
+    padding: 0px 100px;
+}
+
+
