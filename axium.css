@@ -13,12 +13,13 @@
 
 .logo-main {
     height: 100%;
-
+    margin: auto;
     background-image: url(image-assets/axiom-logo-main.png);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 70%;
     background-position: top center;
     width: 100%;
+    max-width: 500px;
 }
 
 .container {
@@ -113,5 +114,5 @@
 
 .footer {
     background-color: black;
-    height: 200px;
+    height: 50px;
 }
