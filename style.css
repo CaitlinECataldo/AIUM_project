@@ -13,9 +13,14 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 p {
     font-family: 'Raleway';
-    color: white;
+    color: rgba(255, 255, 255, 0.897);
+    margin: 5px;
 }
 
 .main-content{
@@ -39,11 +44,10 @@ p {
 }
 
 .parent-container {
-    width: 1000px;
+    width: 850px;
     display: flex;
-    margin: auto;
+    margin: 0px auto;
     height: inherit;
-    padding: 0px 50px;
 }
 
 
@@ -161,14 +165,14 @@ footer .nav-links li:not(:last-child) ::after {
     background-image: url("image-assets/topsection-background.png");
     background-size: cover;
     background-position: center;
-    height: 550px;
+    height: max-content;
 }
 
 .product ul {
     list-style: none;
     font-family: 'Raleway';
     color: rgba(255, 255, 255, 0.833);
-    font-size: 18px;
+    font-size: 14px;
     width: 100%;
     padding: 0px;
 }
@@ -180,29 +184,56 @@ footer .nav-links li:not(:last-child) ::after {
 .product-container {
     width: max-content;
     background-color: rgba(0, 0, 0, 0.50);
-    height: inherit;
+    height: max-content;
     display: flex;
     margin: auto auto auto auto;
 }
 
 .product-image {
-    flex: 1;
+    flex: 2;
     width: inherit;
     height: inherit;
-    margin: auto 65px auto 80px;
+    margin: auto 0px auto 15px;
     background-image: url(image-assets/tough-mojo-jacket-img1.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 350px;
 }
 
+.product-image-2 {
+    flex: 2;
+    width: 500px;
+    height: 500px;
+    margin: 20px 15px auto auto;
+    background-image: url(image-assets/tough-mojo-jacket-img2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+}
+
 .product-description {
     flex: 1;
+    padding-top: 20px;
 }
+
+.about-product .product-description {
+padding-bottom: 150px;
+}
+
+.product-buttons {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 30px 30px;
+    grid-gap: 30px 20px; 
+    margin-top: 40px;
+    font-size: 10px;
+}
+
+
 
 .about-product {
     background-color: #898989;
-    height: 200px;
+    height: max-content;
 }
 
 .product-category {
@@ -211,22 +242,20 @@ footer .nav-links li:not(:last-child) ::after {
     width: inherit;
     height: 30px;
     color: white;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
 }
 .category-name ::after {
     text-decoration: underline;
     content: 'Product Category';
+    font-weight: 100;
 }
 
-.product-type p {
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .product-type ::before {
     content: '>';
     text-decoration: none;
-    margin: 0px 10px;
+    margin: 0px 5px;
 }
 
 .product-type ::after {
